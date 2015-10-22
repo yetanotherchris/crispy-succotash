@@ -1,0 +1,42 @@
+﻿@model IEnumerable<QuoteViewModel>
+<div class="row">
+	<div class="span12">
+		<h2>Quote history (last 7 days)</h2>
+
+	@{
+		DateTime currentDay;
+	}
+
+	@for (int i = 0; i < 7; i++)
+	{
+	
+	{
+		currentDay = DateTime.Today.AddDays(-i);
+	}
+		<h3>@DateTime.Today.AddDays(-i).ToString("dddd dd MMMM")</h3> 
+	
+	<table id="quotestable" class="table table-striped table-bordered">
+		<thead>
+			<tr>
+				<th>Symbol</th>
+				<th>Name</th>
+				<th>Price</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		<tbody>
+		@foreach (QuoteViewModel quote in Model.Where(x => x.CreateDate >= currentDay && x.CreateDate <= currentDay.AddDays(1)))
+		{
+			<tr>
+				<td>@quote.Symbol</td>
+				<td>@quote.Name</td>
+				<td>@quote.LastTradePrice.ToString("C")</td>
+				<td>@quote.CreateDate.ToString()</td>
+			</tr>
+		}
+		</tbody>
+	</table>
+	
+	}
+	</div>
+</div>

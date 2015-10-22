@@ -1,0 +1,25 @@
+﻿@model IEnumerable<InvestmentViewModel>
+
+<div class="row">
+	<div class="span12">
+		<h2>History for @ViewData["PlayerName"]</h2>
+
+		@foreach (InvestmentViewModel investment in Model)
+		{
+			<h4>@investment.Symbol</h4>
+			<div class="label label-default">
+				Bought @investment.Quantity for @investment.PurchasePrice.ToString("C") (total @investment.PurchaseTotal.ToString("C"))
+				 on @investment.PurchaseDate.ToString("dddd dd MMM yyyy HH:mm")
+			</div>
+			<br />
+			if (investment.SellDate != null)
+			{
+			<div class="label @investment.LabelType">
+				Sold for @investment.SellPrice.Value.ToString("C") on (total @investment.SellTotal.Value.ToString("C"))
+				@investment.SellDate.Value.ToString("dddd dd MMM yyyy HH:mm") (@investment.SellReason)
+			</div>
+			<div class="label @investment.PriceDifferenceLabel">Price difference: @investment.PriceDifference.ToString("P")</div>
+			}
+		}
+	</div>
+</div>

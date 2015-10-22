@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mia.Core", "Mia.Core\Mia.Core.csproj", "{21F10219-97B6-4AE2-AB9E-B0C29650869C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mia.Tests", "Mia.Tests\Mia.Tests.csproj", "{0670BFE5-BF1D-466D-A53B-5B7FFEFBCE66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mia", "Mia\Mia.csproj", "{247F53B0-EADC-4941-848C-826296AE4707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mia.Site", "Mia.Site\Mia.Site.csproj", "{AFE08F8D-2B59-4615-9E71-6695A031FF68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21F10219-97B6-4AE2-AB9E-B0C29650869C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F10219-97B6-4AE2-AB9E-B0C29650869C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F10219-97B6-4AE2-AB9E-B0C29650869C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F10219-97B6-4AE2-AB9E-B0C29650869C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0670BFE5-BF1D-466D-A53B-5B7FFEFBCE66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0670BFE5-BF1D-466D-A53B-5B7FFEFBCE66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0670BFE5-BF1D-466D-A53B-5B7FFEFBCE66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0670BFE5-BF1D-466D-A53B-5B7FFEFBCE66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{247F53B0-EADC-4941-848C-826296AE4707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247F53B0-EADC-4941-848C-826296AE4707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247F53B0-EADC-4941-848C-826296AE4707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247F53B0-EADC-4941-848C-826296AE4707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE08F8D-2B59-4615-9E71-6695A031FF68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE08F8D-2B59-4615-9E71-6695A031FF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE08F8D-2B59-4615-9E71-6695A031FF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE08F8D-2B59-4615-9E71-6695A031FF68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+	This is a very dumbed down example, it took 5 minutes to do.
+-->
+<products>
+	<product>
+		<name>Super deluxe sander</name>
+		<price>320.00</price>
+		<category>Tools</category>
+		<stock>30</stock>
+	</product>
+	<product>
+		<name>Drill</name>
+		<price>12.00</price>
+		<category>Tools</category>
+		<stock>2</stock>
+	</product>
+	<product>
+		<name>Screwdriver</name>
+		<price>16.00</price>
+		<category>Tools</category>
+		<stock>30</stock>
+	</product>
+</products>

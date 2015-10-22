@@ -1,0 +1,21 @@
+﻿@model IEnumerable<PlayerViewModel>
+<div class="row" style="border-bottom: 1px solid #eee;">
+	@foreach (PlayerViewModel player in Model)
+	{
+	 <div class="span4">
+		<h2 title="@player.Description">@player.Name <small></small></h2>
+		<h4><a href="http://www.google.co.uk/finance?q=LON:@player.Symbol.Replace(".L","")" target="_blank">@player.Symbol</a></h4>
+		<h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis">@player.CompanyName</h5>
+		<p class="lead">
+			@player.CurrentPrice.ToString("C") <small class="text-success">@player.PercentageChange.ToString("P")</small>
+		</p>
+		<p>
+			<small>Held for @player.StockAge days. @player.ShareQuantity bought on @player.PurchasedOn.ToShortDateString() for @player.PurchasePrice.ToString("C")</small>
+		</p>
+		
+		<p>
+			@Html.ActionLink("View player history", "PlayerHistory", new { playerName = player.Name }, null)
+		</p>
+	</div>
+	}
+</div>

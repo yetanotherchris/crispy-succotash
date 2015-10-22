@@ -1,0 +1,14 @@
+Download Visual Studio 2008 SP1 Version 1
+Download Visual Studio 2008 Version 1
+Download Visual Studio 2005 Version 1
+Download Visual Studio 2003 Version
+
+Project Description
+This addin provides you with a permanent place to quickly access source files you use regularly, beyond the MRU (most recently used list). Fits alongside your toolbox window, and adds an extra context menu command for quickly adding files.
+
+The project has been converted from Visual Studio 2003 where it was originally made. If anyone needs the addin for 2003, leave a message as it's fairly straight forward to convert it back (it basically involves registering the assembly as a COM server and changing the DTE2 interface to DTE, adding the Office reference back in and then using the .reg file).
+
+
+
+
+- The list of files are stored inside your roaming profile root directory, in a file named "VS-ShortcutsAddin-Files.xml". Make sure you have set the right permissions for this file or an error message will show up.

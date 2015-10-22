@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping auto-import="true" default-lazy="false" xmlns="urn:nhibernate-mapping-2.2">
+	<class name="NHibernateQueryHelper.User,NHibernateQueryHelper" table="users">
+		<id name="Id" access="field.lowercase-underscore" column="id" type="System.Guid" unsaved-value="00000000-0000-0000-0000-000000000000">
+			<generator class="guid"/>
+		</id>
+		<property name="Name" access="property" type="String">
+			<column name="name"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>
