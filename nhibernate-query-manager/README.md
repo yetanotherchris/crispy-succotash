@@ -40,7 +40,7 @@ type : Used to load NHibernate.Configuration settings from the type's assembly.
 idName: The name of the Id column for the object. This is "Id" by default.
 * **NHibernateQueryManager(Dictionary<string, string> properties)**  
 properties: A Dictionary with the properties to pass when building the ISessionFactory
-* ** NHibernateQueryManager(ISessionFactory factory, string idName)**  
+* **NHibernateQueryManager(ISessionFactory factory, string idName)**  
 Combines the two constructors above.
 
 Sessions are disposed of by default unless you set the property, or use the constructor overload. If you want to apply your database settings without using your own SessionFactory:
@@ -85,7 +85,7 @@ And finally if you want to use NHibernate Query Manager with Fluent NHibernate:
 		}
 	}
 
-###More general usage=
+###More general usage
 You can create a NHibernateManager with one type and use other types in the lifetime of the manager object - the type passed in is simply for configuration.
 
 	// Example usage
