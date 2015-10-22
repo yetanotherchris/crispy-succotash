@@ -9,7 +9,7 @@ Console app version of the classic
 A better UI version of the classic
 
 #### Mia
-A C# stock trading (for the AIM market) simulator, that uses actors with personalities: some are risky traders, others conservative. A bit buggy though.
+A C# stock trading (for the AIM market) simulator, that uses actors with personalities: some are risky traders, others conservative. A bit buggy though, the idea was completely stolen From David M.
 
 #### Threading examples
 From long before there was the TPL
