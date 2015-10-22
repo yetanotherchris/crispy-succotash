@@ -11,7 +11,7 @@ A better UI version of the classic
 #### Mia
 A C# stock trading (for the AIM market) simulator, that uses actors with personalities: some are risky traders, others conservative. A bit buggy though.
 
-#### Theading examples
+#### Threading examples
 From long before there was the TPL
 
 #### Umbraco Data Export
